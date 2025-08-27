@@ -104,9 +104,9 @@ func main() {
 	// Relatório final
 	fmt.Println("=== RELATÓRIO DE TESTE DE CARGA ===")
 	fmt.Printf("URL: %s\n", *url)
+	fmt.Printf("Tempo Total: %v\n", elapsed)
 	fmt.Printf("Total de Requests: %d\n", *requests)
 	fmt.Printf("Concorrência: %d\n", *concurrency)
-	fmt.Printf("Tempo Total: %v\n", elapsed)
 	fmt.Println("-----------------------------------")
 
 	if count, ok := statusCodes[200]; ok {
